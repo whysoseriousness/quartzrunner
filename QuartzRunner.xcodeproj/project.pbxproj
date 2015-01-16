@@ -23,6 +23,10 @@
 		1A1644B916A8F86A00F4CEC7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A16449416A8F86900F4CEC7 /* Foundation.framework */; };
 		1A1644C116A8F86A00F4CEC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1A1644BF16A8F86A00F4CEC7 /* InfoPlist.strings */; };
 		1A1644C416A8F86A00F4CEC7 /* QuartzRunnerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1644C316A8F86A00F4CEC7 /* QuartzRunnerTests.m */; };
+		1A1644CF16A8FD4E00F4CEC7 /* GameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1644CE16A8FD4D00F4CEC7 /* GameView.m */; };
+		1A1644D216A9ECF500F4CEC7 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A1644D116A9ECF500F4CEC7 /* Box.m */; };
+		1A1644D616AA0D7500F4CEC7 /* template in Resources */ = {isa = PBXBuildFile; fileRef = 1A1644D516AA0D7500F4CEC7 /* template */; };
+		1AD459BF16B426800010C1AD /* template2 in Resources */ = {isa = PBXBuildFile; fileRef = 1AD459BE16B426800010C1AD /* template2 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,12 @@
 		1A1644C016A8F86A00F4CEC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1A1644C216A8F86A00F4CEC7 /* QuartzRunnerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuartzRunnerTests.h; sourceTree = "<group>"; };
 		1A1644C316A8F86A00F4CEC7 /* QuartzRunnerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuartzRunnerTests.m; sourceTree = "<group>"; };
+		1A1644CD16A8FD4D00F4CEC7 /* GameView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameView.h; sourceTree = "<group>"; };
+		1A1644CE16A8FD4D00F4CEC7 /* GameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameView.m; sourceTree = "<group>"; };
+		1A1644D016A9ECF500F4CEC7 /* Box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box.h; sourceTree = "<group>"; };
+		1A1644D116A9ECF500F4CEC7 /* Box.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Box.m; sourceTree = "<group>"; };
+		1A1644D516AA0D7500F4CEC7 /* template */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template; sourceTree = "<group>"; };
+		1AD459BE16B426800010C1AD /* template2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = template2; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +132,10 @@
 				1A1644AA16A8F86900F4CEC7 /* MainStoryboard.storyboard */,
 				1A1644AD16A8F86900F4CEC7 /* ViewController.h */,
 				1A1644AE16A8F86900F4CEC7 /* ViewController.m */,
+				1A1644CD16A8FD4D00F4CEC7 /* GameView.h */,
+				1A1644CE16A8FD4D00F4CEC7 /* GameView.m */,
+				1A1644D016A9ECF500F4CEC7 /* Box.h */,
+				1A1644D116A9ECF500F4CEC7 /* Box.m */,
 				1A16449916A8F86900F4CEC7 /* Supporting Files */,
 			);
 			path = QuartzRunner;
@@ -130,7 +144,9 @@
 		1A16449916A8F86900F4CEC7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AD459BE16B426800010C1AD /* template2 */,
 				1A16449A16A8F86900F4CEC7 /* QuartzRunner-Info.plist */,
+				1A1644D516AA0D7500F4CEC7 /* template */,
 				1A16449B16A8F86900F4CEC7 /* InfoPlist.strings */,
 				1A16449E16A8F86900F4CEC7 /* main.m */,
 				1A1644A016A8F86900F4CEC7 /* QuartzRunner-Prefix.pch */,
@@ -197,7 +213,7 @@
 			name = QuartzRunnerTests;
 			productName = QuartzRunnerTests;
 			productReference = 1A1644B516A8F86A00F4CEC7 /* QuartzRunnerTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -207,6 +223,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = integritas;
+				TargetAttributes = {
+					1A16448D16A8F86900F4CEC7 = {
+						DevelopmentTeam = CX366XA7P2;
+					};
+				};
 			};
 			buildConfigurationList = 1A16448816A8F86900F4CEC7 /* Build configuration list for PBXProject "QuartzRunner" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -236,6 +257,8 @@
 				1A1644A716A8F86900F4CEC7 /* Default@2x.png in Resources */,
 				1A1644A916A8F86900F4CEC7 /* Default-568h@2x.png in Resources */,
 				1A1644AC16A8F86900F4CEC7 /* MainStoryboard.storyboard in Resources */,
+				1A1644D616AA0D7500F4CEC7 /* template in Resources */,
+				1AD459BF16B426800010C1AD /* template2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +296,8 @@
 				1A16449F16A8F86900F4CEC7 /* main.m in Sources */,
 				1A1644A316A8F86900F4CEC7 /* AppDelegate.m in Sources */,
 				1A1644AF16A8F86A00F4CEC7 /* ViewController.m in Sources */,
+				1A1644CF16A8FD4E00F4CEC7 /* GameView.m in Sources */,
+				1A1644D216A9ECF500F4CEC7 /* Box.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +472,7 @@
 				1A1644C916A8F86A00F4CEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A1644CA16A8F86A00F4CEC7 /* Build configuration list for PBXNativeTarget "QuartzRunnerTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +481,7 @@
 				1A1644CC16A8F86A00F4CEC7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
